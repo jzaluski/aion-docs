@@ -48,7 +48,8 @@ After extraction of the archive you will have a directory structure like this
 │   ├── rt
 │   ├── script
 │   └── web-console
-└── aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2```
+└── aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2
+```
 
 ### Create Mainnet Directory
 run `./aion.sh` to create the structure and and kill the process (ctrl-c). The structure will look like this.
