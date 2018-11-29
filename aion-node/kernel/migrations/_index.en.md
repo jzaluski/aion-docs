@@ -4,7 +4,7 @@ When a new version of the kernel is released, you will likely have to migrate yo
 
 1. Download the new binary from [GitHub](https://github.com/aionnetwork/aion/releases).
 
-### Example Directory Structure
+## Example Directory Structure
 
 ```bash
 /home/aion/
@@ -35,10 +35,10 @@ If you extract the tar without moving it to another directory, it will override 
 -f specify file
 
 ### new file structure
-
 After extraction of the archive you will have a directory structure like this
 
-```~/aion032
+```
+~/aion032
 ├── aion
 │   ├── aion_gui.sh
 │   ├── aion.sh
@@ -48,12 +48,14 @@ After extraction of the archive you will have a directory structure like this
 │   ├── rt
 │   ├── script
 │   └── web-console
-└── aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2```
+└── aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2
+```
 
 ### Create Mainnet Directory
 run `./aion.sh` to create the structure and and kill the process (ctrl-c). The structure will look like this.
 
-```~/aion032/aion
+```
+~/aion032/aion
 ├── aion_gui.sh
 ├── aion.sh
 ├── config
@@ -70,15 +72,14 @@ run `./aion.sh` to create the structure and and kill the process (ctrl-c). The s
 ├── native
 ├── rt
 ├── script
-└── web-console```
+└── web-console
+```
 
 ### Config File
-
 You can copy your existing config.xml into the new directory and append the name (to not override new config file). 
-
 `cp ~/aion/config/config.xml ~/aion032/aion/mainnet/config/config_030.xml`
 
-Open both in your text editor of choice and update config.xml with the settings in config_030.xml (this is the least risk of missing a configuration detail)
+Open both in your text editor of choice and update config.xml with the settings in config_030.xml (this is the least risky of missing a new configuration detail with v0.3.2)
 
 ### Database COPY or resync
 Depending on your infrastructure you may want to copy or resync the database.
@@ -90,8 +91,7 @@ To copy the database, you need to shut down your existing kernel. This may not b
 
 ### Keystore
 Copy the keystore file into the v0.3.2 directory.
-
-`cp ~/aion/keystore/UTC--2018..... ~/aion032/aion/mainnet/keystore
+`cp ~/aion/keystore/UTC--2018..... ~/aion032/aion/mainnet/keystore`
 
 ### Backup Logs
 
@@ -129,10 +129,10 @@ Depending on your infrastructure, you may need to kill the existing process (Aio
 
                 v0.3.2.2cfa29c
 
-                    mainnet```
+                    mainnet
+```
 
-
-## Create Mastery directory structure
+## Create Mastery Testnet directory structure
 If you run mastery testnet, the above instructures are exactly the same except you will need to run 
 `./aion.sh -n mastery`
 
