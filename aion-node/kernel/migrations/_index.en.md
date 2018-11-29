@@ -70,7 +70,8 @@ run `./aion.sh` to create the structure and and kill the process (ctrl-c). The s
 ├── native
 ├── rt
 ├── script
-└── web-console```
+└── web-console
+```
 
 ### Config File
 
@@ -87,11 +88,10 @@ To copy the database, you need to shut down your existing kernel. This may not b
 #### Copy database 
 `cp -r ~/aion/database aion032/aion/mainnet/`
 
-
 ### Keystore
 Copy the keystore file into the v0.3.2 directory.
 
-`cp ~/aion/keystore/UTC--2018..... ~/aion032/aion/mainnet/keystore
+`cp ~/aion/keystore/UTC--2018..... ~/aion032/aion/mainnet/keystore`
 
 ### Backup Logs
 
@@ -129,8 +129,8 @@ Depending on your infrastructure, you may need to kill the existing process (Aio
 
                 v0.3.2.2cfa29c
 
-                    mainnet```
-
+                    mainnet
+```
 
 ## Create Mastery directory structure
 If you run mastery testnet, the above instructures are exactly the same except you will need to run 
